@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Muhammad Owais Raza | Full-Stack Web Developer</title>
+  <meta name="description" content="Personal portfolio of Muhammad Owais Raza, an aspiring Full-Stack Web Developer building practical web applications with modern frontend and backend technologies. Created for Arch Technologies Internship Task 1.">
+  <meta name="author" content="Muhammad Owais Raza">
+  <meta name="theme-color" content="#0F172A">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="Muhammad Owais Raza | Full-Stack Web Developer">
+  <meta property="og:description" content="Personal portfolio of Muhammad Owais Raza, an aspiring Full-Stack Web Developer.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Font: Inter (with preconnect) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- =========================================================================
+       1. Header & Sticky Navigation
+       ========================================================================= -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="#home" class="brand" aria-label="Muhammad Owais Raza - Home">
+        <div class="brand-icon" aria-hidden="true">OR</div>
+        <div class="brand-title">
+          <span class="brand-name">Owais Raza</span>
+          <span class="brand-role">Full-Stack Developer</span>
+        </div>
+      </a>
+
+      <!-- Mobile Navigation Toggle Button -->
+      <button class="nav-toggle" aria-expanded="false" aria-label="Open main menu" aria-controls="primary-nav">
+        <span class="hamburger-line" aria-hidden="true"></span>
+        <span class="hamburger-line" aria-hidden="true"></span>
+        <span class="hamburger-line" aria-hidden="true"></span>
+      </button>
+
+      <!-- Primary Navigation Menu -->
+      <nav id="primary-nav" class="nav-menu" aria-label="Primary Navigation">
+        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+        <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-cta">
+          <a href="#contact" class="btn btn-primary" style="padding: 0.55rem 1.1rem; font-size: 0.85rem;">Let's Talk</a>
+        </li>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Backdrop Overlay -->
+  <div class="nav-backdrop" aria-hidden="true"></div>
+
+  <!-- Main Content Wrapper -->
+  <main id="main-content" role="main">
+
+    <!-- =======================================================================
+         2. Hero / Introduction Section
+         ======================================================================= -->
+    <section id="home" class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Aspiring Full-Stack Web Developer</span>
+          </div>
+          <h1 id="hero-heading" class="hero-title">
+            Hi, I'm <span class="highlight">Muhammad Owais Raza</span>
+          </h1>
+          <h2 class="hero-role">Full-Stack Web Developer</h2>
+          <p class="hero-description">
+            I am building practical, end-to-end web applications with modern frontend and backend technologies. Driven by continuous learning and real-world problem solving, my goal is to become a professional Full-Stack Web Developer.
+          </p>
+
+          <div class="btn-group hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+              View My Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              Contact Me
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <div class="social-links">
+              <a href="https://github.com/Muhammad-owais-raza" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit Muhammad Owais Raza's GitHub profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/muhammad-owais-raza-dev/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit Muhammad Owais Raza's LinkedIn profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="mailto:owaisraza.codes@gmail.com" class="social-link" aria-label="Send email to Muhammad Owais Raza">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Hero Visual Code Card -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="code-window">
+            <div class="code-header">
+              <div class="window-dots">
+                <span class="window-dot dot-red"></span>
+                <span class="window-dot dot-yellow"></span>
+                <span class="window-dot dot-green"></span>
+              </div>
+              <span class="window-title">developer.js</span>
+            </div>
+            <pre class="code-content"><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-property">name</span>: <span class="code-string">"Muhammad Owais Raza"</span>,
+  <span class="code-property">title</span>: <span class="code-string">"Full-Stack Web Developer"</span>,
+  <span class="code-property">goal</span>: <span class="code-string">"Become a professional Full-Stack Developer"</span>,
+  <span class="code-property">stack</span>: [
+    <span class="code-string">"HTML5"</span>, <span class="code-string">"CSS3"</span>, <span class="code-string">"JavaScript"</span>,
+    <span class="code-string">"PHP"</span>, <span class="code-string">"Laravel"</span>, <span class="code-string">"MySQL"</span>,
+    <span class="code-string">"WordPress"</span>, <span class="code-string">"Git"</span>
+  ],
+  <span class="code-property">currentLearning</span>: <span class="code-string">"MERN Stack"</span>,
+  <span class="code-property">status</span>: <span class="code-string">"Internship Task 1 @ Arch Tech"</span>
+};</code></pre>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-pill pill-1">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+            <span>Actively Developing Skills</span>
+          </div>
+          <div class="floating-pill pill-2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <span>Frontend & Backend</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. About Me Section
+         ======================================================================= -->
+    <section id="about" class="section section-alt" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 id="about-heading" class="section-title">Aspiring Full-Stack Web Developer</h2>
+          <p class="section-description">
+            Dedicated to crafting clean code, responsive layouts, and reliable backend systems.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              My name is <strong>Muhammad Owais Raza</strong>, an aspiring web developer pursuing a career in <strong>Full-Stack Web Development</strong>. My career ambition is to become a skilled, professional Full-Stack Web Developer capable of building robust, accessible, and high-performance digital applications.
+            </p>
+            <p>
+              I am actively strengthening my technical capabilities across core web standards including <strong>HTML5, CSS3, Bootstrap, and JavaScript</strong> for frontend engineering, alongside <strong>PHP, Laravel, and MySQL</strong> for backend architecture and database management. In addition, I work with <strong>WordPress, Elementor, and Elementor Pro</strong> for CMS development, and utilize <strong>Git and GitHub</strong> for structured version control.
+            </p>
+            <p>
+              To broaden my full-stack capabilities, I am also actively expanding into the <strong>MERN Stack</strong> (MongoDB, Express.js, React, Node.js).
+            </p>
+
+            <div class="about-highlight-box">
+              <h4>Continuous Learning & Practical Growth</h4>
+              <p>
+                My educational pathway combines formal commerce and information system diplomas with intensive modern web development training at Saylani Mass IT Training.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-cards-grid">
+            <div class="about-stat-card">
+              <div class="stat-icon-wrapper" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <h3 class="stat-title">Frontend & Backend</h3>
+              <p class="stat-desc">Hands-on practice building responsive interfaces with HTML, CSS, JS, and server logic with PHP & Laravel.</p>
+            </div>
+
+            <div class="about-stat-card">
+              <div class="stat-icon-wrapper" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+              </div>
+              <h3 class="stat-title">Databases & CMS</h3>
+              <p class="stat-desc">Structured data modeling with MySQL and dynamic content building with WordPress and Elementor Pro.</p>
+            </div>
+
+            <div class="about-stat-card">
+              <div class="stat-icon-wrapper" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg>
+              </div>
+              <h3 class="stat-title">Version Control</h3>
+              <p class="stat-desc">Standard Git and GitHub workflows for tracking code repositories, commits, and collaborative practices.</p>
+            </div>
+
+            <div class="about-stat-card">
+              <div class="stat-icon-wrapper" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <h3 class="stat-title">Active Learning</h3>
+              <p class="stat-desc">Currently learning the MERN Stack to develop scalable JavaScript full-stack web applications.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. Education & Background Section
+         ======================================================================= -->
+    <section id="education" class="section" aria-labelledby="education-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic & Technical Background</span>
+          <h2 id="education-heading" class="section-title">Education & Training</h2>
+          <p class="section-description">
+            A comprehensive overview of my academic foundation, professional diploma, and technical training.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- 1. DISM -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <article class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-title">DISM — Diploma in Information System Management</h3>
+                <div class="timeline-meta">
+                  <span class="badge badge-completed">Completed — 2026</span>
+                </div>
+              </div>
+              <div class="timeline-institute">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                <span>Information System Management Program</span>
+              </div>
+              <p class="timeline-details">
+                1-year comprehensive diploma program covering foundational information systems, computer management, and applied technical concepts.
+              </p>
+            </article>
+          </div>
+
+          <!-- 2. Modern Web & Web Application Development -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <article class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Modern Web & Web Application Development</h3>
+                <div class="timeline-meta">
+                  <span class="badge badge-in-progress">In Progress</span>
+                </div>
+              </div>
+              <div class="timeline-institute">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                <span>Saylani Mass IT Training (SMIT)</span>
+              </div>
+              <p class="timeline-details">
+                Hands-on practical training covering responsive frontend development, JavaScript DOM manipulation, backend technologies, and web application architecture.
+              </p>
+            </article>
+          </div>
+
+          <!-- 3. Associate Degree in Commerce -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <article class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Associate Degree in Commerce (ADC)</h3>
+                <div class="timeline-meta">
+                  <span class="badge badge-in-progress">In Progress</span>
+                </div>
+              </div>
+              <div class="timeline-institute">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                <span>University of Karachi</span>
+              </div>
+              <p class="timeline-details">
+                Higher education degree program focusing on commerce, business principles, accounting, and quantitative analysis.
+              </p>
+            </article>
+          </div>
+
+          <!-- 4. M.A. Islamiyat & M.A. Arabic -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <article class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-title">M.A. Islamiyat & M.A. Arabic</h3>
+                <div class="timeline-meta">
+                  <span class="badge badge-in-progress">In Progress</span>
+                </div>
+              </div>
+              <div class="timeline-institute">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                <span>Kanzul Madaris Board</span>
+              </div>
+              <p class="timeline-details">
+                Advanced academic studies in Islamic literature, language, ethics, and Arabic linguistics.
+              </p>
+            </article>
+          </div>
+
+          <!-- 5. Intermediate in Commerce -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <article class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-title">Intermediate in Commerce</h3>
+                <div class="timeline-meta">
+                  <span class="badge badge-completed">Completed</span>
+                </div>
+              </div>
+              <div class="timeline-institute">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                <span>Govt. Premier College, BIEK</span>
+              </div>
+              <p class="timeline-details">
+                Higher secondary school certificate in Commerce under Board of Intermediate Education Karachi (BIEK).
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. Certifications Section (Subtle Intentional Empty State)
+         ======================================================================= -->
+    <section id="certifications" class="section section-alt" aria-labelledby="certifications-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Certifications</span>
+          <h2 id="certifications-heading" class="section-title">Professional Certifications</h2>
+          <p class="section-description">
+            Verified credentials and certifications will be showcased here as milestones are completed.
+          </p>
+        </div>
+
+        <div class="empty-state-card">
+          <div class="empty-state-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <h3 class="empty-state-title">No certifications listed yet.</h3>
+          <p class="empty-state-text">
+            I am currently engaged in coursework and training programs. Verified certifications will be added here upon formal completion.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. Skills Section
+         ======================================================================= -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 id="skills-heading" class="section-title">Skills & Technologies</h2>
+          <p class="section-description">
+            Categorized technical stack spanning frontend development, backend engineering, databases, CMS platforms, and version control.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 1. Frontend -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+              </div>
+              <h3 class="skill-category-title">Frontend Development</h3>
+            </div>
+            <div class="skill-items">
+              <span class="skill-badge">
+                <svg class="skill-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                HTML5
+              </span>
+              <span class="skill-badge">
+                <svg class="skill-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                CSS3
+              </span>
+              <span class="skill-badge">
+                <svg class="skill-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/></svg>
+                Bootstrap
+              </span>
+              <span class="skill-badge">
+                <svg class="skill-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+                JavaScript
+              </span>
+            </div>
+          </div>
+
+          <!-- 2. Backend -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>
+              </div>
+              <h3 class="skill-category-title">Backend Development</h3>
+            </div>
+            <div class="skill-items">
+              <span class="skill-badge">
+                <svg class="skill-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                PHP
+              </span>
+              <span class="skill-badge">
+                <svg class="skill-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polygon points="12 12 2 17 12 22 22 17 12 12"/></svg>
+                Laravel
+              </span>
+            </div>
+          </div>
+
+          <!-- 3. Database -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+              </div>
+              <h3 class="skill-category-title">Database Management</h3>
+            </div>
+            <div class="skill-items">
+              <span class="skill-badge">
+                <svg class="skill-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/></svg>
+                MySQL
+              </span>
+            </div>
+          </div>
+
+          <!-- 4. CMS / Website Development -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+              </div>
+              <h3 class="skill-category-title">CMS & Builders</h3>
+            </div>
+            <div class="skill-items">
+              <span class="skill-badge">
+                <svg class="skill-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/></svg>
+                WordPress
+              </span>
+              <span class="skill-badge">
+                <svg class="skill-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"/></svg>
+                Elementor
+              </span>
+              <span class="skill-badge">
+                <svg class="skill-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Elementor Pro
+              </span>
+            </div>
+          </div>
+
+          <!-- 5. Tools & Version Control -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" x2="6" y1="3" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
+              </div>
+              <h3 class="skill-category-title">Tools & Version Control</h3>
+            </div>
+            <div class="skill-items">
+              <span class="skill-badge">
+                <svg class="skill-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="6" x2="6" y1="9" y2="15"/></svg>
+                Git
+              </span>
+              <span class="skill-badge">
+                <svg class="skill-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg>
+                GitHub
+              </span>
+            </div>
+          </div>
+
+          <!-- 6. Currently Learning -->
+          <div class="skill-category-card learning-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="M2 12h4"/><path d="m4.93 19.07 2.83-2.83"/><path d="M12 22v-4"/><path d="m19.07 19.07-2.83-2.83"/><path d="M22 12h-4"/><path d="m19.07 4.93-2.83 2.83"/></svg>
+              </div>
+              <h3 class="skill-category-title">Currently Learning</h3>
+            </div>
+            <div class="skill-items">
+              <span class="skill-badge" style="border-color: rgba(168, 85, 247, 0.4); background: rgba(168, 85, 247, 0.15); color: #E9D5FF; font-weight: 600;">
+                <svg class="skill-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                MERN Stack
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         7. Projects Section
+         ======================================================================= -->
+    <section id="projects" class="section section-alt" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 id="projects-heading" class="section-title">Practical Web Projects</h2>
+          <p class="section-description">
+            Selected personal web development projects highlighting practical programming, responsive layout, and DOM manipulation.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: TaskFlow -->
+          <article class="project-card">
+            <div class="project-preview">
+              <div class="project-preview-mockup">
+                <div class="preview-icon">
+                  <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                </div>
+                <span class="preview-label">Web Application</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">TaskFlow — Modern To-Do List</h3>
+                <span class="badge badge-completed">Featured</span>
+              </div>
+
+              <p class="project-description">
+                A modern responsive To-Do List web application that allows users to add, edit, delete, and manage tasks. Task data is persisted using browser LocalStorage.
+              </p>
+
+              <div class="project-features">
+                <h4 class="features-heading">Key Feature Highlights:</h4>
+                <ul class="feature-list">
+                  <li class="feature-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Add, edit & delete tasks</span>
+                  </li>
+                  <li class="feature-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Mark tasks as completed</span>
+                  </li>
+                  <li class="feature-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Active / Completed filters</span>
+                  </li>
+                  <li class="feature-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>LocalStorage persistence</span>
+                  </li>
+                  <li class="feature-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Responsive interface</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">LocalStorage</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://github.com/Muhammad-owais-raza/TaskFlow-Modern-To-Do-List---for-Arch-Technologies" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Marksheet-with-DOM -->
+          <article class="project-card">
+            <div class="project-preview">
+              <div class="project-preview-mockup">
+                <div class="preview-icon">
+                  <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"/><line x1="3" x2="21" y1="9" y2="9"/><line x1="9" x2="9" y1="21" y2="9"/></svg>
+                </div>
+                <span class="preview-label">DOM Manipulation</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-header">
+                <h3 class="project-title">Marksheet-with-DOM</h3>
+                <span class="badge badge-neutral">JavaScript Project</span>
+              </div>
+
+              <p class="project-description">
+                A JavaScript-based marksheet project demonstrating DOM manipulation and dynamic interaction using HTML, CSS, and JavaScript.
+              </p>
+
+              <div class="project-features">
+                <h4 class="features-heading">Key Highlights:</h4>
+                <ul class="feature-list">
+                  <li class="feature-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Dynamic DOM manipulation</span>
+                  </li>
+                  <li class="feature-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Interactive calculations</span>
+                  </li>
+                  <li class="feature-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Clean modular structure</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+
+              <div class="project-footer">
+                <div class="badge badge-neutral" style="width: 100%; justify-content: center; padding: 0.75rem; font-size: 0.85rem;">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                  <span>Personal Practice Project</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         8. Experience & Practical Work Section
+         ======================================================================= -->
+    <section id="experience" class="section" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Practical Work</span>
+          <h2 id="experience-heading" class="section-title">Experience & Practical Work</h2>
+          <p class="section-description">
+            Practical development background focused on personal projects, technical exercises, and continuous skill acquisition.
+          </p>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-header">
+            <h3 class="experience-title">Personal Projects & Hands-On Practice</h3>
+            <span class="badge badge-in-progress">Self-Directed & Internship</span>
+          </div>
+
+          <p class="experience-quote">
+            "Hands-on development experience through personal projects, practical web development exercises, and continuous learning across frontend and backend technologies."
+          </p>
+
+          <div class="experience-points">
+            <div class="exp-point">
+              <div class="exp-point-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="exp-point-text">
+                <h5>Application Logic</h5>
+                <p>Building real-world web logic using vanilla JavaScript, DOM APIs, and LocalStorage data handling.</p>
+              </div>
+            </div>
+
+            <div class="exp-point">
+              <div class="exp-point-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="exp-point-text">
+                <h5>Full-Stack Integration</h5>
+                <p>Developing backend systems, database schemas with MySQL, and server scripting with PHP and Laravel.</p>
+              </div>
+            </div>
+
+            <div class="exp-point">
+              <div class="exp-point-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="exp-point-text">
+                <h5>Standard Tooling</h5>
+                <p>Maintaining structured git repositories, clean branch habits, and version-controlled projects.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         9. Testimonials Section (Intentional Empty State)
+         ======================================================================= -->
+    <section id="testimonials" class="section section-alt" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Recommendations</span>
+          <h2 id="testimonials-heading" class="section-title">Testimonials</h2>
+          <p class="section-description">
+            Feedback and recommendations from mentors and collaborators will be published as career experience advances.
+          </p>
+        </div>
+
+        <div class="empty-state-card">
+          <div class="empty-state-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3 class="empty-state-title">Testimonials will be added as professional experience grows.</h3>
+          <p class="empty-state-text">
+            I look forward to collaborating on professional teams and delivering high-value web development work.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         10. Blog / Articles Section (Intentional Empty State)
+         ======================================================================= -->
+    <section id="blog" class="section" aria-labelledby="blog-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Writing & Insights</span>
+          <h2 id="blog-heading" class="section-title">Blog / Articles</h2>
+          <p class="section-description">
+            Technical write-ups, development notes, and tutorials will be published in this space.
+          </p>
+        </div>
+
+        <div class="empty-state-card">
+          <div class="empty-state-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+          </div>
+          <h3 class="empty-state-title">Articles and technical writing will be added here in the future.</h3>
+          <p class="empty-state-text">
+            Upcoming articles will cover full-stack web concepts, practical JavaScript patterns, PHP/Laravel development, and modern CSS techniques.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         11. Achievements Section (Intentional Empty State)
+         ======================================================================= -->
+    <section id="achievements" class="section section-alt" aria-labelledby="achievements-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Recognition</span>
+          <h2 id="achievements-heading" class="section-title">Achievements</h2>
+          <p class="section-description">
+            Awards, hackathon milestones, and notable professional accomplishments.
+          </p>
+        </div>
+
+        <div class="empty-state-card">
+          <div class="empty-state-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3 class="empty-state-title">Professional achievements will be added as new milestones are reached.</h3>
+          <p class="empty-state-text">
+            Milestones and recognitions will be updated as I progress through internship challenges and technical contributions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         12. Contact Section
+         ======================================================================= -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 id="contact-heading" class="section-title">Contact Muhammad Owais Raza</h2>
+          <p class="section-description">
+            Feel free to reach out for web development opportunities, internships, or technical collaboration.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Contact Details -->
+          <div class="contact-info">
+            <h3 style="font-size: 1.35rem; font-weight: 700; color: var(--text-color); margin-bottom: 0.5rem;">Let's Talk Web Development</h3>
+            <p style="color: var(--muted-text-color); font-size: 0.95rem; line-height: 1.6;">
+              I am open to discussions regarding junior developer positions, web development internships, and collaborative development tasks.
+            </p>
+
+            <div class="contact-info-list">
+              <!-- Email -->
+              <a href="mailto:owaisraza.codes@gmail.com" class="contact-card" aria-label="Send email to owaisraza.codes@gmail.com">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
+                <div class="contact-meta">
+                  <span class="label">Email Address</span>
+                  <span class="value">owaisraza.codes@gmail.com</span>
+                </div>
+              </a>
+
+              <!-- Phone -->
+              <a href="tel:03346391222" class="contact-card" aria-label="Call 0334-6391222">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="contact-meta">
+                  <span class="label">Phone Number</span>
+                  <span class="value">0334-6391222</span>
+                </div>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/muhammad-owais-raza-dev/" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Open LinkedIn Profile">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </div>
+                <div class="contact-meta">
+                  <span class="label">LinkedIn Profile</span>
+                  <span class="value">muhammad-owais-raza-dev</span>
+                </div>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/Muhammad-owais-raza" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Open GitHub Profile">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg>
+                </div>
+                <div class="contact-meta">
+                  <span class="label">GitHub Profile</span>
+                  <span class="value">Muhammad-owais-raza</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Accessible Contact Form -->
+          <div class="contact-form-container">
+            <div class="form-header">
+              <h3>Send a Message</h3>
+              <p>Fill out the form below and I will respond to your inquiry promptly.</p>
+            </div>
+
+            <form id="contactForm" novalidate aria-label="Contact Message Form">
+              <div class="form-group">
+                <label for="userName" class="form-label">
+                  Full Name <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input type="text" id="userName" name="userName" class="form-control" placeholder="Your Full Name" required autocomplete="name">
+                <div id="nameError" class="form-error" aria-live="polite"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="userEmail" class="form-label">
+                  Email Address <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input type="email" id="userEmail" name="userEmail" class="form-control" placeholder="you@example.com" required autocomplete="email">
+                <div id="emailError" class="form-error" aria-live="polite"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="userMessage" class="form-label">
+                  Your Message <span class="required" aria-hidden="true">*</span>
+                </label>
+                <textarea id="userMessage" name="userMessage" class="form-control" rows="4" placeholder="Write your message or inquiry here..." required></textarea>
+                <div id="messageError" class="form-error" aria-live="polite"></div>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" x2="11" y1="2" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                Send Message
+              </button>
+
+              <div id="formStatus" class="form-status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       13. Footer
+       ========================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Bio -->
+        <div class="footer-brand">
+          <h3>Muhammad Owais Raza</h3>
+          <p>
+            Aspiring Full-Stack Web Developer passionate about building accessible, performant, and scalable web solutions.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/Muhammad-owais-raza" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Muhammad Owais Raza on GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-owais-raza-dev/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Muhammad Owais Raza on LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="mailto:owaisraza.codes@gmail.com" class="social-link" aria-label="Email Muhammad Owais Raza">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Me</a></li>
+            <li><a href="#education" class="footer-link">Education</a></li>
+            <li><a href="#skills" class="footer-link">Skills</a></li>
+            <li><a href="#projects" class="footer-link">Projects</a></li>
+            <li><a href="#experience" class="footer-link">Experience</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contact & Direct Connect -->
+        <div class="footer-col">
+          <h4>Contact Information</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="mailto:owaisraza.codes@gmail.com" class="footer-link">owaisraza.codes@gmail.com</a>
+            </li>
+            <li>
+              <a href="tel:03346391222" class="footer-link">0334-6391222</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/muhammad-owais-raza-dev/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn Profile</a>
+            </li>
+            <li>
+              <a href="https://github.com/Muhammad-owais-raza" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Profile</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Muhammad Owais Raza. All rights reserved.</p>
+        <span class="internship-note">Web Development Internship — Task 1 | Arch Technologies</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
