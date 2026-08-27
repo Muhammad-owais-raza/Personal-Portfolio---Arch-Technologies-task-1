@@ -230,7 +230,7 @@ function initContactForm() {
 
     // Process valid submission feedback
     if (statusEl) {
-      statusEl.textContent = 'Thank you! Your message has been prepared successfully.';
+      statusEl.textContent = 'Thanks! Your message has been validated successfully. This portfolio form is currently frontend-only.';
       statusEl.classList.add('success');
       statusEl.setAttribute('role', 'alert');
     }

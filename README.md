@@ -3,7 +3,7 @@
 > **Web Development Internship — Task 1**  
 > **Organization:** Arch Technologies  
 > **Candidate:** Muhammad Owais Raza  
-> **Role / Specialization:** Aspiring Full-Stack Web Developer
+> **Role / Specialization:** Full-Stack Web Developer
 
 ---
 
@@ -20,7 +20,7 @@ The portfolio is designed and developed to present the candidate's authentic bac
 - **Accurate & Transparent Profile**: Showcases genuine academic background, qualifications, skill sets, and personal projects without exaggerated statistics or placeholder copy.
 - **Modern Design System**: Built with a sleek dark aesthetic (`#0F172A`), balanced typography via the Inter font family, glassmorphism headers, subtle interactive elevation, and cohesive indigo/cyan accent palettes.
 - **Comprehensive Section Coverage**:
-  1. **Sticky Header / Navigation**: Desktop navbar and responsive mobile drawer with focus trap, aria attributes, and active scroll spy.
+  1. **Sticky Header / Navigation**: Desktop navbar and responsive mobile drawer with ARIA attributes, escape-key support, and active scroll spy.
   2. **Hero / Introduction**: Dynamic developer code card, clear career ambition statement, primary/secondary action buttons, and direct social links.
   3. **About Me**: Narrative describing current full-stack focus, educational background, and learning milestones.
   4. **Education & Qualifications**: Visually attractive timeline layout detailing DISM, SMIT Web Development training, ADC, M.A. studies, and Intermediate in Commerce.
@@ -58,13 +58,6 @@ Personal-Portfolio---Arch-Technologies-task-1/
 ├── assets/
 │   ├── icons/                 # Scalable SVG icons & graphic assets
 │   └── images/                # Visual media assets
-├── portfolio/                 # Self-contained portfolio folder matching task spec
-│   ├── index.html
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   └── script.js
-│   └── assets/
 └── README.md                  # Project documentation & overview
 ```
 
@@ -79,7 +72,7 @@ This portfolio is built entirely with standard web technologies (Vanilla HTML, C
    git clone https://github.com/Muhammad-owais-raza/Personal-Portfolio---Arch-Technologies-task-1.git
    ```
 2. **Open the Website**:
-   - Double-click `index.html` (or `portfolio/index.html`) in your file explorer to launch it directly in Google Chrome, Mozilla Firefox, Microsoft Edge, Safari, or any modern web browser.
+   - Double-click `index.html` in your file explorer to launch it directly in Google Chrome, Mozilla Firefox, Microsoft Edge, Safari, or any modern web browser.
    - Alternatively, open the directory in VS Code and use the *Live Server* extension.
 
 ---
@@ -103,6 +96,7 @@ The stylesheet is tested across standard responsive breakpoints to eliminate hor
 
 - **Keyboard Navigation**: Full Tab navigation support with clear `:focus-visible` focus rings.
 - **Screen Reader Support**: Semantic landmarks, `aria-label`, `aria-expanded`, and `aria-controls` on interactive controls.
+- **Escape-Key Support**: Accessible escape key listener to close the mobile navigation menu.
 - **Form Usability**: Associated `<label for="...">` tags and live validation errors announced via `aria-live="polite"`.
 - **Reduced Motion**: Full support for `@media (prefers-reduced-motion: reduce)` to disable non-essential transitions and floating animations.
 - **Safe External Links**: All external hyperlinks utilize `target="_blank"` with `rel="noopener noreferrer"` attributes.
